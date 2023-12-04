@@ -1,0 +1,213 @@
+.vehicle{
+    margin: 50px 0;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        .heading{
+            h2{
+            font-size: 50px;
+            text-align: center;
+            padding: 50px;
+            font-weight: 500;
+            }
+        }
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .card{
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                @media (min-width: 768px){
+                    width: 50%;
+                }   
+                @media (min-width: 1024px){
+                        width: 50%;
+                    }
+                    
+                }
+                .card_inner{
+                    box-shadow: 0px 30px 70px 0px rgba(11, 6, 70, 0.09);
+
+                    @media (min-width: 768px){
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    @media (min-width: 1024px){
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    .img{
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;   
+                        @media (min-width: 768px){
+                            width: 100%;
+                        }              
+                        .img_inner{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transition: all .3s ease-in-out;
+                            &:hover{
+                                transform: scale(1.1);
+                               filter: brightness(70%);
+                            }
+                        }
+                        .vehicle_brand{
+                            position: absolute;
+                            top: 20px;
+                            left: 15px;
+                            &:hover{
+                                .a_brand{
+                                    background-color: #fff;
+                                    color: #111111;
+                                }
+                            }
+                            .a_brand{
+                                background-color: #111111;
+                                padding: 5px;
+                            }
+                        }
+                        .icons{
+                            display: flex;
+                            position: absolute;
+                            right: 5%;
+                            bottom: 5%;
+                            .left_icon{
+                                padding: 13px;
+                                &:hover{
+                                    span{
+                                    background-color: rgba(0, 0, 0, 0.8);
+                                    }
+                                }
+                                span{
+                                    transition: all .1s ease-in-out;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    padding: 10px;
+                                    fill: #fff;
+                                }
+                            }
+                            .mid_icon{
+                                padding: 13px;
+                                &:hover{
+                                    span{
+                                    background-color: rgba(0, 0, 0, 0.8);
+                                    }
+                                }
+                                span{
+                                    transition: all .1s ease-in-out;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    padding: 10px;
+                                    fill: #fff;
+                                }
+                            }
+                            .right_icon{
+                                padding: 13px;
+                                &:hover{
+                                    span{
+                                    background-color: rgba(0, 0, 0, 0.8);
+                                    }
+                                }
+                                span{
+                                    transition: all .1s ease-in-out;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    padding: 10px;
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .content{
+                        width: 100%;
+                        padding: 13px 23px;
+                        @media (min-width: 768px){
+                            width: 100%;
+                        }  
+                        .top_data{
+                            display: flex;
+                            gap: 10px;
+                            font-size: 12px;
+                            .type{
+                                display: inline-block;
+                                padding: 5px;
+                                background-color: #EEEEEE;
+                            }
+                            .date{
+                                display: inline-block;
+                                padding: 5px;
+                                background-color: #EEEEEE;
+                            }
+                        }
+                        .mid_data{
+                            padding-top: 15px;
+                            a{
+                                span{
+                                    font-weight: 500;
+                                    font-size: 19px;
+                                    color: #000000;
+                                    &:hover{
+                                    color: #E30001;
+                                    }
+                                    
+                                }
+                            }
+                            .value{
+                                padding-top: 10px;
+                                span{
+                                    font-size: 19px;
+                                    color: #E30001;
+                                    font-weight: 500;
+
+                                }
+                            }
+                        }
+                        .last_data{
+                            display: flex;
+                            padding-top: 20px;
+                            .last_left_data{
+                                width: 50%;
+                                #car{
+                                    font-size: 14px;
+                                    width: 20px;
+                                    height: 20px;
+                                    fill: #000000;
+                                }
+                                .left_bottom{
+                                    padding-top: 20px;
+                                    #car{
+                                        font-size: 14px;
+                                        width: 20px;
+                                        height: 20px;
+                                        fill: #000000;
+                                    }
+                                }
+                            }
+                            }
+                            .last_right_data{
+                                width: 50%;
+                            #car{
+                                font-size: 14px;
+                                width: 20px;
+                                height: 20px;
+                                fill: #000000;
+                            }
+                            .right_bottom{
+                                padding-top: 20px;
+                                #car{
+                                    font-size: 14px;
+                                    width: 20px;
+                                    height: 20px;
+                                    fill: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
